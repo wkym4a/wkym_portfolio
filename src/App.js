@@ -1,17 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './App.css';
+import HeadForm from './portfolio/HeadForm';
+import ContentForm from './portfolio/ContentForm';
+// import ContentForm from './memo/FindForm';
+// import MemoForm from './memo/DelForm';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a>
-          ----React Learning----
-        </a>
-      </header>
-    </div>
-  );
+// Appコンポーネント
+class App extends Component {
+
+  constructor(props){
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>若山侑輝のポートフォリオ集
+              
+        <HeadForm />
+        <ContentForm />
+
+      </div>
+    )
+      
+  }
 }
 
-export default App;
+export default connect()(App);
+// export default App;
