@@ -4,6 +4,8 @@ import { beforePortfolio } from './Store';
 import { nextPortfolio } from './Store';
 import { changeMemo } from './Store';
 
+import Icon from '../img/Img3.png'
+
 class ContentForm extends Component {
 
   input = {
@@ -53,6 +55,8 @@ class ContentForm extends Component {
         
         <input type="submit"  value="前へ" onClick={this.doBefore}/>
         <input type="submit"  value="次へ" onClick={this.doNext}/>
+
+        <img src={Icon}  alt="アイコン" />
 
       </div>
     );
