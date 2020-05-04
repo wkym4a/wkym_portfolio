@@ -3,8 +3,11 @@ import { connect } from 'react-redux';
 import './App.css';
 import HeadForm from './portfolio/HeadForm';
 import ContentForm from './portfolio/ContentForm';
-// import ContentForm from './memo/FindForm';
-// import MemoForm from './memo/DelForm';
+
+
+import TestForm from './TestForm';
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Appコンポーネント
 class App extends Component {
@@ -16,8 +19,10 @@ class App extends Component {
   render() {
     return (
       <div>若山侑輝のポートフォリオ集
+        {/* <TestForm /> */}
               
         <HeadForm />
+        <br></br><br></br>
         <ContentForm />
 
       </div>

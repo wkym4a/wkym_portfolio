@@ -4,7 +4,7 @@ const max_num = 3;
 
 const initData = {
   num:0,
-  data:[{num:1, memo:'0'},{num:2, memo:'1'},{num:3, memo:'2'}],
+  data:[{num:1, memo:''},{num:2, memo:''},{num:3, memo:''}],
   message:''
 };
 
@@ -98,6 +98,12 @@ export function changeMemo(text) {
   return {
     type: 'CHANGE',
     memo:text
+  }
+}
+export function clearMemo(text) {
+  return {
+    type: 'CHANGE',
+    memo:""
   }
 }
 
