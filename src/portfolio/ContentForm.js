@@ -76,7 +76,7 @@ class ContentForm extends Component {
     switch (this.props.num) {
       case 0:
         port_name= 'ポートフォリオ';
-        url_info= 'http://mappura.com';
+        url_info= 'https://wkym-portfolio.herokuapp.com';
         poto_info = Icon1;
         summary = <span>学習中のreactで作成した、現在表示中の頁。↓↓↓の『メモ』は閲覧者様用
         <br></br>……ポートフォリオごとにメモ書きして、『メモをコピー』でクリップボードに保存するようにしています。よろしければお使いください。</span>
