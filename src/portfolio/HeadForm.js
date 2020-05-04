@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import { addMemo } from './Store';
+
+import { Button,Row,Col } from "react-bootstrap";
 
 class HeadForm extends Component {
 
@@ -10,12 +11,14 @@ class HeadForm extends Component {
 
   render(){
     // return <div>ヘッド情報</div>
-    let port1="● Maっぷら"
-    let port2="● 八千代台の不動産屋が作った月極駐車場管理アプリ"
-    let port3="● タスク管理システム(社内使用を想定)"
+    let port1="● ポートフォリオ(この頁)"
+    let port2="● Maっぷら"
+    let port3="● 八千代台の不動産屋が作った月極駐車場管理アプリ"
+    let port4="● タスク管理システム(社内使用を想定)"
     let select_port1= "　 "
     let select_port2= "　 "
     let select_port3= "　 "
+    let select_port4= "　 "
     
     switch (this.props.num) {
       case 0:
@@ -27,13 +30,25 @@ class HeadForm extends Component {
       case 2:
         select_port3= "=>"
         break;
+      case 3:
+        select_port4= "=>"
+        break;
     }
 
-    return (<div>
-      <div>{select_port1}{port1}</div>
-      <div>{select_port2}{port2}</div>
-      <div>{select_port3}{port3}</div>
-      </div>)
+    return (
+      <Row>
+      <Col xs={2} md={3}>
+      </Col>
+      <Col xs={10} md={9}>
+        <div>
+          <div>{select_port1}{port1}</div>
+          <div>{select_port2}{port2}</div>
+          <div>{select_port3}{port3}</div>
+          <div>{select_port4}{port4}</div>
+        </div>
+      </Col>
+    </Row>
+    )
     // <div>ヘッド情報vv{num}</div>
 
 

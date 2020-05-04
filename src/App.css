@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.move-btn {
+  margin:auto;
+  text-align: center;
+}
+.move-btn-size {
+  height: 40px;
+}
+.title{
+  margin: auto;
+  text-align: center;
+}
+.err_msg{
+  /* margin: auto; */
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}

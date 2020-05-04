@@ -1,10 +1,10 @@
 import { createStore } from 'redux';
 
-const max_num = 3;
+const max_num = 4;
 
 const initData = {
   num:0,
-  data:[{num:1, memo:''},{num:2, memo:''},{num:3, memo:''}],
+  data:[{num:1, memo:''},{num:2, memo:''},{num:3, memo:''},{num:4, memo:''}],
   message:''
 };
 

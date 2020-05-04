@@ -4,6 +4,7 @@ import './App.css';
 import HeadForm from './portfolio/HeadForm';
 import ContentForm from './portfolio/ContentForm';
 
+import { Button,Row,Col } from "react-bootstrap";
 
 import TestForm from './TestForm';
 
@@ -18,9 +19,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>若山侑輝のポートフォリオ集
-        {/* <TestForm /> */}
-              
+      <div>
+        <div>
+          <h5 className="title">若山侑輝のポートフォリオ集</h5>
+        </div>
+
+        <br></br>
         <HeadForm />
         <br></br><br></br>
         <ContentForm />
