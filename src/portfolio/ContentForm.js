@@ -69,6 +69,7 @@ class ContentForm extends Component {
   render(){
     let port_name
     let url_info
+    let git_info
     let poto_info
     let summary
 
@@ -77,6 +78,7 @@ class ContentForm extends Component {
       case 0:
         port_name= 'ポートフォリオ';
         url_info= 'https://wkym-portfolio.herokuapp.com';
+        git_info= 'https://github.com/wkym4a/wkym_portfolio';
         poto_info = Icon1;
         summary = <span>学習中のreactで作成した、現在表示中の頁。↓↓↓の『メモ』は閲覧者様用
         <br></br>……ポートフォリオごとにメモ書きして、『メモをコピー』でクリップボードに保存するようにしています。よろしければお使いください。</span>
@@ -84,6 +86,7 @@ class ContentForm extends Component {
       case 1:
         port_name= 'Maっぷら';
         url_info= 'http://mappura.com';
+        git_info= 'https://github.com/wkym4a/mappura';
         poto_info = Icon2;
         summary = <span>2019年3月〜6月に通っていたプログラミングスクールの卒業制作アプリ──名前の由来は『WebのMapをぷらぷらする』。
         <br></br>自身や他ユーザーが登録した地点情報を集めて『プラン』にすることで、
@@ -93,6 +96,7 @@ class ContentForm extends Component {
       case 2:
         port_name= "八千代台の不動産屋が作った駐車場管理アプリ";
         url_info= "http://yachiyo-parking.herokuapp.com";
+        git_info= 'https://github.com/wkym4a/yachiyo-parking';
         poto_info = Icon3;
         summary = <span>就業中の不動産会社にて、月極駐車場の管理業務を効率化するために作成したアプリ。
                   <br></br>管理対象である駐車場の情報（料金、空き状態など）を更新すると、
@@ -101,6 +105,7 @@ class ContentForm extends Component {
       case 3:
         port_name= "タスク管理システム(社内使用を想定)";
         url_info= "https://safe-chamber-93891.herokuapp.com";
+        git_info= 'https://github.com/wkym4a/manyou_sama';
         poto_info = Icon4;
         summary = <span>当時通っていたプログラミングスクールの課題にて制作（「社員コード→001」「パスワード→password」でログイン可能です）。
         <br></br>・メールアドレスではなく社員コードでのログイン
@@ -129,6 +134,16 @@ class ContentForm extends Component {
             </Col>
             <Col xs={12} md={1} className="move-btn">
               <Button onClick={this.doNext} className="move-btn-size">»</Button>
+            </Col>
+          </Row>
+          <br></br>
+          <Row>
+            <Col xs={1} md={2} className="move-btn">
+            </Col>
+            <Col xs={10} md={8}>
+              <div >GitHub:<a href={git_info} target="_blank" rel="noopener noreferrer">{git_info}</a></div>
+            </Col>
+            <Col xs={11} md={2} className="move-btn">
             </Col>
           </Row>
           <br></br>
